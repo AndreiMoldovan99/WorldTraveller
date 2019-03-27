@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8BC0078-7F33-4260-B814-A99F32D726D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Africa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Africa.Designer.cs">
+      <DependentUpon>Africa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="America De Nord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="America De Nord.Designer.cs">
+      <DependentUpon>America De Nord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="America De Sud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="America De Sud.Designer.cs">
+      <DependentUpon>America De Sud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asia.Designer.cs">
+      <DependentUpon>Asia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Australia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Australia.Designer.cs">
+      <DependentUpon>Australia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DorinteDeVizitare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DorinteDeVizitare.Designer.cs">
+      <DependentUpon>DorinteDeVizitare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaiiTokyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaiiTokyo.Designer.cs">
+      <DependentUpon>DetaiiTokyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiAdelaide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiAdelaide.Designer.cs">
+      <DependentUpon>DetaliiAdelaide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiAlexandria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiAlexandria.Designer.cs">
+      <DependentUpon>DetaliiAlexandria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiAlger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiAlger.Designer.cs">
+      <DependentUpon>DetaliiAlger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiAsuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiAsuncion.Designer.cs">
+      <DependentUpon>DetaliiAsuncion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiAtena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiAtena.Designer.cs">
+      <DependentUpon>DetaliiAtena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBeijing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBeijing.Designer.cs">
+      <DependentUpon>DetaliiBeijing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBerlin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBerlin.Designer.cs">
+      <DependentUpon>DetaliiBerlin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBogota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBogota.Designer.cs">
+      <DependentUpon>DetaliiBogota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBoston.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBoston.Designer.cs">
+      <DependentUpon>DetaliiBoston.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBrasilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBrasilia.Designer.cs">
+      <DependentUpon>DetaliiBrasilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBrisbane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBrisbane.Designer.cs">
+      <DependentUpon>DetaliiBrisbane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBucuresti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBucuresti.Designer.cs">
+      <DependentUpon>DetaliiBucuresti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiBuenosaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiBuenosaires.Designer.cs">
+      <DependentUpon>DetaliiBuenosaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCairo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCairo.Designer.cs">
+      <DependentUpon>DetaliiCairo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCalcutta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCalcutta.Designer.cs">
+      <DependentUpon>DetaliiCalcutta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCapetown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCapetown.Designer.cs">
+      <DependentUpon>DetaliiCapetown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCaracas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCaracas.Designer.cs">
+      <DependentUpon>DetaliiCaracas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCasablanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCasablanca.Designer.cs">
+      <DependentUpon>DetaliiCasablanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiChicago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiChicago.Designer.cs">
+      <DependentUpon>DetaliiChicago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiCopenhaga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiCopenhaga.Designer.cs">
+      <DependentUpon>DetaliiCopenhaga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiDelhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiDelhi.Designer.cs">
+      <DependentUpon>DetaliiDelhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiEsperance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiEsperance.Designer.cs">
+      <DependentUpon>DetaliiEsperance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiGoldcoast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiGoldcoast.Designer.cs">
+      <DependentUpon>DetaliiGoldcoast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiHobart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiHobart.Designer.cs">
+      <DependentUpon>DetaliiHobart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiHongkong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiHongkong.Designer.cs">
+      <DependentUpon>DetaliiHongkong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiJakartah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiJakartah.Designer.cs">
+      <DependentUpon>DetaliiJakartah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiJohannensburg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiJohannensburg.Designer.cs">
+      <DependentUpon>DetaliiJohannensburg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLapaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLapaz.Designer.cs">
+      <DependentUpon>DetaliiLapaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLasvegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLasvegas.Designer.cs">
+      <DependentUpon>DetaliiLasvegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLima.Designer.cs">
+      <DependentUpon>DetaliiLima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLisabona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLisabona.Designer.cs">
+      <DependentUpon>DetaliiLisabona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLondra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLondra.Designer.cs">
+      <DependentUpon>DetaliiLondra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiLosangeles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiLosangeles.Designer.cs">
+      <DependentUpon>DetaliiLosangeles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detaliiluanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detaliiluanda.Designer.cs">
+      <DependentUpon>Detaliiluanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMadrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiMadrid.Designer.cs">
+      <DependentUpon>DetaliiMadrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiManila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiManila.Designer.cs">
+      <DependentUpon>DetaliiManila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMelbourne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiMelbourne.Designer.cs">
+      <DependentUpon>DetaliiMelbourne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMiami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiMiami.Designer.cs">
+      <DependentUpon>DetaliiMiami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMilano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiMilano.Designer.cs">
+      <DependentUpon>DetaliiMilano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiMumbai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiMumbai.Designer.cs">
+      <DependentUpon>DetaliiMumbai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiNairobi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiNairobi.Designer.cs">
+      <DependentUpon>DetaliiNairobi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiNewcastle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiNewcastle.Designer.cs">
+      <DependentUpon>DetaliiNewcastle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiNewyork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiNewyork.Designer.cs">
+      <DependentUpon>DetaliiNewyork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiParamaribo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiParamaribo.Designer.cs">
+      <DependentUpon>DetaliiParamaribo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiParis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiParis.Designer.cs">
+      <DependentUpon>DetaliiParis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiPerth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiPerth.Designer.cs">
+      <DependentUpon>DetaliiPerth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiPhoenix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiPhoenix.Designer.cs">
+      <DependentUpon>DetaliiPhoenix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiQuito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiQuito.Designer.cs">
+      <DependentUpon>DetaliiQuito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiRoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiRoma.Designer.cs">
+      <DependentUpon>DetaliiRoma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSaintGeorge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSaintGeorge.Designer.cs">
+      <DependentUpon>DetaliiSaintGeorge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSandiego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSandiego.Designer.cs">
+      <DependentUpon>DetaliiSandiego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSanfrancisco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSanfrancisco.Designer.cs">
+      <DependentUpon>DetaliiSanfrancisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSantiagodechile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSantiagodechile.Designer.cs">
+      <DependentUpon>DetaliiSantiagodechile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSeul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSeul.Designer.cs">
+      <DependentUpon>DetaliiSeul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiShanghai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiShanghai.Designer.cs">
+      <DependentUpon>DetaliiShanghai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiSydney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiSydney.Designer.cs">
+      <DependentUpon>DetaliiSydney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiTripoli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiTripoli.Designer.cs">
+      <DependentUpon>DetaliiTripoli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiWashington.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiWashington.Designer.cs">
+      <DependentUpon>DetaliiWashington.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalliDakar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalliDakar.Designer.cs">
+      <DependentUpon>DetalliDakar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DorinteOraseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DorinteOraseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OraseCeTrebuieVizitate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OraseCeTrebuieVizitate.Designer.cs">
+      <DependentUpon>OraseCeTrebuieVizitate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Europa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Europa.Designer.cs">
+      <DependentUpon>Europa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OraseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OraseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DetaliiRoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\DetaliiRoma.Designer.cs">
+      <DependentUpon>DetaliiRoma.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Africa.resx">
+      <DependentUpon>Africa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="America De Nord.resx">
+      <DependentUpon>America De Nord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="America De Sud.resx">
+      <DependentUpon>America De Sud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asia.resx">
+      <DependentUpon>Asia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Australia.resx">
+      <DependentUpon>Australia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DorinteDeVizitare.resx">
+      <DependentUpon>DorinteDeVizitare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaiiTokyo.resx">
+      <DependentUpon>DetaiiTokyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiAdelaide.resx">
+      <DependentUpon>DetaliiAdelaide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiAlexandria.resx">
+      <DependentUpon>DetaliiAlexandria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiAlger.resx">
+      <DependentUpon>DetaliiAlger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiAsuncion.resx">
+      <DependentUpon>DetaliiAsuncion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiAtena.resx">
+      <DependentUpon>DetaliiAtena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBeijing.resx">
+      <DependentUpon>DetaliiBeijing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBerlin.resx">
+      <DependentUpon>DetaliiBerlin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBogota.resx">
+      <DependentUpon>DetaliiBogota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBoston.resx">
+      <DependentUpon>DetaliiBoston.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBrasilia.resx">
+      <DependentUpon>DetaliiBrasilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBrisbane.resx">
+      <DependentUpon>DetaliiBrisbane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBucuresti.resx">
+      <DependentUpon>DetaliiBucuresti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiBuenosaires.resx">
+      <DependentUpon>DetaliiBuenosaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCairo.resx">
+      <DependentUpon>DetaliiCairo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCalcutta.resx">
+      <DependentUpon>DetaliiCalcutta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCapetown.resx">
+      <DependentUpon>DetaliiCapetown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCaracas.resx">
+      <DependentUpon>DetaliiCaracas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCasablanca.resx">
+      <DependentUpon>DetaliiCasablanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiChicago.resx">
+      <DependentUpon>DetaliiChicago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiCopenhaga.resx">
+      <DependentUpon>DetaliiCopenhaga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiDelhi.resx">
+      <DependentUpon>DetaliiDelhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiEsperance.resx">
+      <DependentUpon>DetaliiEsperance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiGoldcoast.resx">
+      <DependentUpon>DetaliiGoldcoast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiHobart.resx">
+      <DependentUpon>DetaliiHobart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiHongkong.resx">
+      <DependentUpon>DetaliiHongkong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiJakartah.resx">
+      <DependentUpon>DetaliiJakartah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiJohannensburg.resx">
+      <DependentUpon>DetaliiJohannensburg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLapaz.resx">
+      <DependentUpon>DetaliiLapaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLasvegas.resx">
+      <DependentUpon>DetaliiLasvegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLima.resx">
+      <DependentUpon>DetaliiLima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLisabona.resx">
+      <DependentUpon>DetaliiLisabona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLondra.resx">
+      <DependentUpon>DetaliiLondra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiLosangeles.resx">
+      <DependentUpon>DetaliiLosangeles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detaliiluanda.resx">
+      <DependentUpon>Detaliiluanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiMadrid.resx">
+      <DependentUpon>DetaliiMadrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiManila.resx">
+      <DependentUpon>DetaliiManila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiMelbourne.resx">
+      <DependentUpon>DetaliiMelbourne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiMiami.resx">
+      <DependentUpon>DetaliiMiami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiMilano.resx">
+      <DependentUpon>DetaliiMilano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiMumbai.resx">
+      <DependentUpon>DetaliiMumbai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiNairobi.resx">
+      <DependentUpon>DetaliiNairobi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiNewcastle.resx">
+      <DependentUpon>DetaliiNewcastle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiNewyork.resx">
+      <DependentUpon>DetaliiNewyork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiParamaribo.resx">
+      <DependentUpon>DetaliiParamaribo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiParis.resx">
+      <DependentUpon>DetaliiParis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiPerth.resx">
+      <DependentUpon>DetaliiPerth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiPhoenix.resx">
+      <DependentUpon>DetaliiPhoenix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiQuito.resx">
+      <DependentUpon>DetaliiQuito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiRoma.resx">
+      <DependentUpon>DetaliiRoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSaintGeorge.resx">
+      <DependentUpon>DetaliiSaintGeorge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSandiego.resx">
+      <DependentUpon>DetaliiSandiego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSanfrancisco.resx">
+      <DependentUpon>DetaliiSanfrancisco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSantiagodechile.resx">
+      <DependentUpon>DetaliiSantiagodechile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSeul.resx">
+      <DependentUpon>DetaliiSeul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiShanghai.resx">
+      <DependentUpon>DetaliiShanghai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiSydney.resx">
+      <DependentUpon>DetaliiSydney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiTripoli.resx">
+      <DependentUpon>DetaliiTripoli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiWashington.resx">
+      <DependentUpon>DetaliiWashington.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalliDakar.resx">
+      <DependentUpon>DetalliDakar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OraseCeTrebuieVizitate.resx">
+      <DependentUpon>OraseCeTrebuieVizitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Europa.resx">
+      <DependentUpon>Europa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\DetaliiRoma.resx">
+      <DependentUpon>DetaliiRoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DorinteOraseDataSet.xsc">
+      <DependentUpon>DorinteOraseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DorinteOraseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DorinteOraseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DorinteOraseDataSet.xss">
+      <DependentUpon>DorinteOraseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OraseDataSet.xsc">
+      <DependentUpon>OraseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OraseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OraseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OraseDataSet.xss">
+      <DependentUpon>OraseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porto-portugalsko-mesto-pristav-more-clanokW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roma3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_264028625-1-990x660.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73295-640x360-london-skyline-ns.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\berlin-welcomecard_hero_2880_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucuresti-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madrid-aventurescu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Milano-850x450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paris-toamna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d7922d081c7432c8cffc90e13a07d9b20171130175238.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\las vegas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\los angeles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miami.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new york.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phoenix1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\san diego1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\san francisco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washington.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boston.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asuncion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bogota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brasilia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buenos aires.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caracas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la paz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lima.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paramaribo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santiago de chile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cape town.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Casablanca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dakar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannesburg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luanda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nairobi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tripoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alexandria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cairo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hong kong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakarta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mumbai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shanghai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tokyo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beijing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calcutta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delhi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold coast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hobart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melbourne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newcastle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saint george.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sydney.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adelaide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brisbane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esperance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel-the-world-or-own-a-home-seethru-travel-world-the-ideal-travel-world.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8710126183557.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DorinteOrase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DorinteOrase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DorinteOrase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Orase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Orase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Orase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\background1.jpg" />
+    <None Include="Resources\background2.jpg" />
+    <None Include="Resources\meniuedit.jpg" />
+    <None Include="Resources\travel3.png" />
+    <None Include="Resources\travel-the-world_23-2147516668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
